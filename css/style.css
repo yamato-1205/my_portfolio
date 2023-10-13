@@ -1,4 +1,10 @@
 body {
+  color: #FFFFFF;
+  background-color: #2F3232;
+}
+
+.base {
+  color: #FFFFFF;
   background-color: #2F3232;
 }
 /* アイコンのサイズを変更するためのルール */
