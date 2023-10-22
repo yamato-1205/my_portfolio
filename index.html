@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/style.css"></link>
-  <link href="js/main.js"></link>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="js/main.js"></script>
   <title>YMTの記録場</title>
 </head>
 <body>
 
+  <!-- ヘッダー -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">YMTの記録場</a>
@@ -34,28 +35,91 @@
   </nav>
 
   <div class="container">
+    <!-- トップ画像 -->
     <div class="mb-5">
       <img src="./image/ホームページ画像.jpeg" class="img-fluid" art="甲子園球場">
     </div>
-  
+    <!-- 現在の完成度 -->
+    <div class="mb-5">
+      <h2><i class="bi bi-align-start"></i> このサイトの完成度(Completeness of this site)</h2>
+      <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar" style="width: 25%">25%</div>
+      </div>
+    </div>
+    <!-- 自己紹介 -->
     <div class="mb-5">
       <h2><i class="bi bi-person-square"></i> 自己紹介(Self-introduction)</h2>
-      <ul class="list-group list-group-flush fs-4">
-        <li class="list-group-item base">名前(Name): YAMATO</li>
-        <li class="list-group-item base">年齢(Age): 22</li>
-        <li class="list-group-item base">大学(University): 大阪府立大学(Osaka Prefecture University)</li>
-        <li class="list-group-item base">分野(Departments): 知能情報工学分野(Computer Science and Intelligent Systems)</li>
+      <ul class="fs-4">
+        <li><h3 class="base">名前(Name): YAMATO</h3></li>
+        <li><h3 class="base">年齢(Age): 22</h3></li>
+        <li><h3 class="base">大学(University): 大阪府立大学(Osaka Prefecture University)</h3></li>
+        <li><h3 class="base">分野(Departments): 知能情報工学分野(Computer Science and Intelligent Systems)</h3></li>
       </ul>
     </div>
-
+    <!-- 趣味 -->
     <div class="mb-5">
       <h2><i class="bi bi-heart-fill"></i> 趣味(Hobby)</h2>
-      <ul class="list-group list-group-flush fs-4">
-        <li class="list-group-item base"><i class="material-icons md-36">sports_tennis</i> ソフトテニス</li>
-      </ul>
+      <!-- 趣味1 -->
+      <div class="accordion mb-3" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-btn collapsed base" type="button" onclick="turn_one()" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+              <div class="flex"><h3>ソフトテニス</h3><i class="material-icons md-36">sports_tennis</i></div>
+              <i id="turn_one" class="bi bi-caret-down-fill"></i>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse base">
+            <div class="accordion-body">
+              中学、高校の6年間ソフトテニス部で前衛してました<br>
+              大学でもソフトテニスサークルで定期的にやってます！
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 趣味2 -->
+      <div class="accordion mb-3" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-btn collapsed base" type="button" onclick="turn_two()" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              <div class="flex"><h3>ランニング</h3><i class="material-icons md-36">directions_run</i></div>
+              <i id="turn_two" class="bi bi-caret-down-fill"></i>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse base">
+            <div class="accordion-body">
+              長距離が得意で、大学ではランニングサークルにも所属しています<br>
+              ハーフマラソンの自己ベストは01:33:16<br>
+              今年はフルマラソンにも挑戦します！
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 趣味3 -->
+      <div class="accordion mb-3" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-btn collapsed base" type="button" onclick="turn_three()" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              <div class="flex"><h3>推し活  <i class="bi bi-chat-heart"></i></h3></div>
+              <i id="turn_three" class="bi bi-caret-down-fill"></i>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse base">
+            <div class="accordion-body">
+              推しは <i class="bi bi-box-arrow-up-right"></i><a href="https://www.youtube.com/@LaplusDarknesss/featured" style="color: #E1D8E6">ラプラス・ダークネス</a><br>
+              他にもYoutubeやTwitchでよく配信を見たりしています！
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+    <!-- これまでやってきたこと -->
+    <div class="mb-5">
+      <h2><i class="bi bi-star-half"></i>これまでやってきたこと(Achievements)</h2>
 
+    </div>
+
+
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

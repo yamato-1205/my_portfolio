@@ -7,6 +7,39 @@ body {
   color: #FFFFFF;
   background-color: #2F3232;
 }
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.turn-arrow {
+  transform: scale(1, -1);
+}
+
+.accordion-btn {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+  font-size: 1rem;
+  text-align: left;
+  border: 0;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.accordion-btn:not(.collapsed) {
+  border-width: 0px 0px 5px 0px;
+  border-radius: 5px 5px 0px 0px;
+  border-style: dotted;
+  border-color: #FFFFFF;
+}
+
+
+
 /* アイコンのサイズを変更するためのルール */
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
