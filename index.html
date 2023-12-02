@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <script src="js/main.js"></script> -->
   <!-- <link rel="stylesheet" href="./css/style.css"> -->
   <link rel="stylesheet" href="https://yamato-1205.github.io/my_portfolio/css/style.css">
-  <!-- <script src="js/main.js"></script> -->
   <script src="https://yamato-1205.github.io/my_portfolio/js/main.js"></script>
   <title>YMTの記録場</title>
 </head>
@@ -26,10 +26,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://twitter.com/YAMATO12051015">X(旧Twitter)</a>
+            <a class="nav-link" href="https://twitter.com/YAMATO12051015"><i class="fa-brands fa-x-twitter"></i> X(旧Twitter)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/yamato-1205"><i class="fa-brands fa-github"></i> Github</a>
           </li>
         </ul>
       </div>
@@ -52,11 +55,56 @@
     <div class="mb-5">
       <h2><i class="bi bi-person-square"></i> 自己紹介(Self-introduction)</h2>
       <ul class="fs-4">
-        <li><h3 class="base">名前(Name): YAMATO</h3></li>
-        <li><h3 class="base">年齢(Age): 22</h3></li>
-        <li><h3 class="base">大学(University): 大阪府立大学(Osaka Prefecture University)</h3></li>
-        <li><h3 class="base">分野(Departments): 知能情報工学分野(Computer Science and Intelligent Systems)</h3></li>
+        <li><h3>名前(Name): YAMATO</h3></li>
+        <li><h3>年齢(Age): 22</h3></li>
+        <li><h3>大学(University): 大阪府立大学(Osaka Prefecture University)</h3></li>
+        <li><h3>分野(Departments): 知能情報工学分野(Computer Science and Intelligent Systems)</h3></li>
       </ul>
+    </div>
+    <!-- 成果物 -->
+    <div class="mb-5">
+      <h2><i class="bi bi-pencil-square"></i> 成果物(deliverable)</h2>
+      <div class="row row-cols-1 row-cols-md-2">
+        <!-- hatena_app -->
+        <div class="col">
+          <div class="card m-2">
+            <img src="./image/hatena_app.jpg" class="card-img-top" alt="hatena_appの画像">
+            <div class="card-body">
+              <h3 class="card-title">hatena_app</h3>
+              <p class="card-text">文章の内容を送るとChatGPTがその場面に適した文章に変換してくれるmacOS用のアプリです。</p>
+              <p class="card-text">リポジトリはPrivateで作成しているので公開はできません🙏</p>
+              <a href="" class="btn btn-secondary m-1">紹介動画作成予定</a>
+              <button type="button" class="btn btn-secondary m-1" data-bs-toggle="modal" data-bs-target="#detail1">この成果物の詳細</button>
+            </div>
+          </div>
+        </div>
+        <!-- さぽちむHP -->
+        <div class="col">
+          <div class="card m-2">
+            <img src="./image/さぽちむHP.jpg" class="card-img-top" alt="さぽちむホームページの画像">
+            <div class="card-body">
+              <h3 class="card-title">さぽちむホームページ</h3>
+              <p class="card-text">自分が所属しているさぽちむという学生団体のホームページです。</p>
+              <p class="card-text">STUDIOを使用してノーコードで作成しています。</p>
+              <a href="https://sapochimu.studio.site/sapotimu/jp" class="btn btn-secondary m-1">サイトを見に行く</a>
+              <button type="button" class="btn btn-secondary m-1" data-bs-toggle="modal" data-bs-target="#detail2">この成果物の詳細</button>
+            </div>
+          </div>
+        </div>
+        <!-- なんでもやさんHP -->
+        <div class="col">
+          <div class="card m-2">
+            <img src="./image/なんでもやさんHP.jpg" class="card-img-top" alt="なんでもやさんホームページの画像">
+            <div class="card-body">
+              <h3 class="card-title">なんでもやさんホームページ</h3>
+              <p class="card-text">友達がやっているなんでもやさんのホームページです。</p>
+              <p class="card-text">STUDIOを使用してノーコードで作成しています。</p>
+              <a href="https://nandemoyasan-fuka.studio.site/" class="btn btn-secondary m-1">サイトを見に行く</a>
+              <button type="button" class="btn btn-secondary m-1" data-bs-toggle="modal" data-bs-target="#detail3">この成果物の詳細</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- 趣味 -->
     <div class="mb-5">
@@ -116,12 +164,103 @@
     </div>
     <!-- これまでやってきたこと -->
     <div class="mb-5">
-      <h2><i class="bi bi-star-half"></i>これまでやってきたこと(Achievements)</h2>
-
+      <h2><i class="bi bi-star-half"></i>経歴(Career)</h2>
+      <ul class="fs-4">
+        <li>
+          <h4><a href="https://axis-kansai-circle.com/" class="base">関西AXIS2期生  <i class="bi bi-box-arrow-up-right"></i></a></h4>
+          <p>大学一回生の頃に学生団体の関西AXISに2期生として所属。今の自分に結構大きな影響を与えてくれています。</p>
+        </li>
+        <li>
+          <h4><a href="https://sapochimu.studio.site/" class="base">さぽちむ  <i class="bi bi-box-arrow-up-right"></i></a></h4>
+          <p>関西AXISの活動で発足した福祉系の学生団体。関西AXIS卒業後も活動を続けています。<br>さぽちむのHPは自分が作成しています。</p>
+        </li>
+        <li>
+          <h4><a href="https://twitter.com/omu_meetrack" class="base">ランニングサークルMetra(幹部：企画)  <i class="bi bi-box-arrow-up-right"></i></a></h4>
+          <p>大阪公立大学のランニングサークル。こちらの<a href="https://x.com/omu_meetrack/status/1634740932963885056?s=20" class="base">Metraの紹介動画</a>は下手くそですが自分が作りました〜</p>
+        </li>
+        <li>
+          <h4><a href="https://twitter.com/vollevolle_omu2" class="base">ソフトテニスサークルぼれぼれ(代表)  <i class="bi bi-box-arrow-up-right"></i></a></h4>
+          <p>大阪公立大学のソフトテニスサークル。中学高校と続けていたソフトテニスを大学でも継続！</p>
+        </li>
+        <li>
+          <h4><a href="https://code-gate.framer.website/" class="base">プログラミングサークルCode.Gate?  <i class="bi bi-box-arrow-up-right"></i></a></h4>
+          <p>プログラミングサークル。先輩方に色々教えてもらって日々勉強中〜</p>
+        </li>
+      </ul>
     </div>
-
-
   </div>
+
+
+  <!-- hatena_appの説明 -->
+  <div class="modal fade" id="detail1" tabindex="-1" aria-labelledby="detailLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content base">
+        <div class="modal-header" data-bs-theme="dark">
+          <h3 id="detailLabel1">hatena_app</h3>
+          <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4>使用技術</h4>
+          <ul>
+            <li>Swift</li>
+            <li>ChatGPT</li>
+          </ul>
+          <h4>詳細</h4>
+          <p>Code.Gate?というプログラミングのサークル内で4日間のハッカソンを行い作成しました。</p>
+          <p>このアプリは自分の送りたい内容を柔らかい文章にしてくれたり、取引先などに向けて硬い文章にしてくれたりします。<br>
+          そしてXcodeを用いてSwiftでmacOS用のアプリとして作成しました。</p>
+          <p>自分はテキストをGPTに送信したり、GPTから受け取った情報を表示したり、アプリのレイアウトなどを担当しました。<br>
+          Swiftを触るのは初めてだったので、最初はわからないことだらけで難しかったですが、動画などを見て学習して頑張りました。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- さぽちむHPの説明 -->
+  <div class="modal fade" id="detail2" tabindex="-1" aria-labelledby="detailLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content base">
+        <div class="modal-header" data-bs-theme="dark">
+          <h1 class="modal-title fs-5" id="detailLabel2">さぽちむホームページ</h1>
+          <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4>使用技術</h4>
+          <ul>
+            <li>STUDIO</li>
+          </ul>
+          <h4>詳細</h4>
+          <p>さぽちむの紹介だったり、活動の記録を残す場所としてホームページとして作成しました。</p>
+          <p>大学1回生の冬頃から作成を始め、大きなデザイン変更を2回ほど重ねたものが今のホームページになっています。<br>
+          STUDIOというノーコードのツールを使用しており、STUDIOのアップデートと共にHPも進化していきました。</p>
+          <p>基本的には自分ひとりで作成しており、特にこだわった部分としてはCMSを利用して定期的な活動報告を簡単に更新できるように工夫したところです。<br>
+          難しかった部分はレスポンシブ対応で、STUDIOのツールのお陰で比較的簡単に対応できましたが、それでも頭を悩まされました。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- なんでもやさんHPの説明 -->
+  <div class="modal fade" id="detail3" tabindex="-1" aria-labelledby="detailLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content base">
+        <div class="modal-header" data-bs-theme="dark">
+          <h1 class="modal-title fs-5" id="detailLabel3">さぽちむホームページ</h1>
+          <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4>使用技術</h4>
+          <ul>
+            <li>STUDIO</li>
+          </ul>
+          <h4>詳細</h4>
+          <p>自分が所属しているさぽちむの代表がやっているなんでもやさんを紹介するホームページです。</p>
+          <p>さぽちむのHPを作成した経験を活かしてSTUDIOを使用し作成しました。</p>
+          <p>CMSをうまく活用することで短時間で作成することができました。<br>
+          実装までは至りませんでしたが、ハッシュタグごとに絞り込みなどをする予定もありました。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
