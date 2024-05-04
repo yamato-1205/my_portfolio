@@ -57,14 +57,27 @@
       <ul class="fs-4">
         <li><h3>名前(Name): YAMATO</h3></li>
         <li><h3>年齢(Age): 22</h3></li>
-        <li><h3>大学(University): 大阪府立大学(Osaka Prefecture University)</h3></li>
-        <li><h3>分野(Departments): 知能情報工学分野(Computer Science and Intelligent Systems)</h3></li>
+        <li><h3>大学(University): 大阪公立大学(Osaka Metropolitan University)</h3></li>
+        <li><h3>分野(Departments): 情報学研究科(Graduate School of Informatics)</h3></li>
       </ul>
     </div>
     <!-- 成果物 -->
     <div class="mb-5">
       <h2><i class="bi bi-pencil-square"></i> 成果物(deliverable)</h2>
       <div class="row row-cols-1 row-cols-md-2">
+        <!-- LINE_BOT -->
+        <div class="col">
+          <div class="card m-2">
+            <img src="./image/LINE_BOT.jpg" class="card-img-top" alt="LINE_BOTのQR画像">
+            <div class="card-body">
+              <h3 class="card-title">LINE_BOT</h3>
+              <p class="card-text">文字数のカウントや乱数生成などいろんなことができるLINEボットです。</p>
+              <p class="card-text">LINEのMessagingAPIを使用しphpを用いて作成しています。</p>
+              <a href="https://github.com/yamato-1205/LINE_BOT" class="btn btn-secondary m-1">ソースコード</a>
+              <button type="button" class="btn btn-secondary m-1" data-bs-toggle="modal" data-bs-target="#detail0">この成果物の詳細</button>
+            </div>
+          </div>
+        </div>
         <!-- hatena_app -->
         <div class="col">
           <div class="card m-2">
@@ -190,7 +203,32 @@
     </div>
   </div>
 
-
+  <!-- hatena_appの説明 -->
+  <div class="modal fade" id="detail0" tabindex="-1" aria-labelledby="detailLabel0" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content base">
+        <div class="modal-header" data-bs-theme="dark">
+          <h3 id="detailLabel0">LINE_BOT</h3>
+          <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4>使用技術</h4>
+          <ul>
+            <li>LINE Messaging API</li>
+            <li>php</li>
+            <li>Apache2</li>
+          </ul>
+          <h4>詳細</h4>
+          <p>LINE Messaging APIを利用しphpでコードを書いています。,<br>
+            また、VPSでUbuntuのサーバーを立ててApache2をインストールし、その環境にデプロイしています。</p>
+          <p>文字数カウントや乱数生成、YouTubeの急上昇ランキング上位の動画の取得などのアクションができるLINE_BOTです。<br>
+            普段から使い慣れているLINEですべてが完結したら便利だなと思って制作しました。</p>
+          <p>行うアクションごとにファイルを分割して一つのファイルが大きくなりすぎないように努力しました。<br>
+            また、入力に対して柔軟に対応できるように条件分岐を工夫しました。</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- hatena_appの説明 -->
   <div class="modal fade" id="detail1" tabindex="-1" aria-labelledby="detailLabel1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
